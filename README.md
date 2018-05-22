@@ -1,8 +1,8 @@
 smartFridgeController
-"""""""""""""""""""""
+---------------------
 
 Intro
-""""""
+--------------
 
 A smart 12v fridge controller that intends to override the normal thermostate so that;
 * When the device sense the 12v is being charged it targets a lower fridge temp to take advantage of the excess power
