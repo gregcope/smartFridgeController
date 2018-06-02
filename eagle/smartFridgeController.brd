@@ -162,6 +162,10 @@ smartFridgeController</text>
 <text x="20.701" y="11.049" size="1.016" layer="25" font="vector">DATA_1</text>
 <text x="20.701" y="8.509" size="1.016" layer="25" font="vector">PRW_1</text>
 <text x="20.701" y="5.842" size="1.016" layer="25" font="vector">GND_1</text>
+<text x="2.54" y="11.684" size="1.016" layer="25" font="vector">+VE</text>
+<text x="2.921" y="1.143" size="1.016" layer="25" font="vector" rot="R90">+VCC</text>
+<text x="5.461" y="0.635" size="1.016" layer="25" font="vector" rot="R90">+3.3V</text>
+<text x="8.128" y="1.143" size="1.016" layer="25" font="vector" rot="R90">+GND</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
