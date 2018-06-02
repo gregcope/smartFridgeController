@@ -6235,13 +6235,6 @@ Source: http://sharp-world.com/products/device/lineup/data/pdf/datasheet/s102s02
 <label x="66.04" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="A2"/>
-<wire x1="104.14" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="104.14" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="D5_DS2_PWR" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D5"/>
@@ -6258,8 +6251,10 @@ Source: http://sharp-world.com/products/device/lineup/data/pdf/datasheet/s102s02
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,202.523,151.198,IO,,,,,"/>
-<approved hash="113,1,22.1827,43.2477,FONA,,,,,"/>
+<approved hash="111,1,104.14,76.2,GND,,,,,"/>
+<approved hash="111,1,124.46,76.2,GND,,,,,"/>
+<approved hash="113,1,141.563,45.7877,JST,,,,,"/>
+<approved hash="113,1,146.643,134.688,18B20,,,,,"/>
 </errors>
 </schematic>
 </drawing>
