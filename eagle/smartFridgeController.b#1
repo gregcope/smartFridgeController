@@ -149,13 +149,19 @@
 <wire x1="39.675" y1="0" x2="39.675" y2="25.39" width="0" layer="20"/>
 <wire x1="39.675" y1="25.39" x2="0" y2="25.39" width="0" layer="20"/>
 <wire x1="0" y1="25.39" x2="0" y2="0" width="0" layer="20"/>
-<text x="26.035" y="4.445" size="1.016" layer="25" font="vector" rot="R90">gregcope@gmail.com
+<text x="30.48" y="4.064" size="1.016" layer="25" font="vector" rot="R90">gregcope@gmail.com
 v0.1
 smartFridgeController</text>
 <text x="2.54" y="17.78" size="1.016" layer="25" font="vector">VCC</text>
 <text x="2.413" y="15.621" size="1.016" layer="25" font="vector">GND</text>
 <text x="2.413" y="13.716" size="1.016" layer="25" font="vector">-VE</text>
 <text x="2.54" y="11.684" size="1.016" layer="25" font="vector">+VE</text>
+<text x="20.701" y="18.669" size="1.016" layer="25" font="vector">DATA_2</text>
+<text x="20.701" y="16.002" size="1.016" layer="25" font="vector">PWR_2</text>
+<text x="20.701" y="13.462" size="1.016" layer="25" font="vector">GND_2</text>
+<text x="20.701" y="11.049" size="1.016" layer="25" font="vector">DATA_2</text>
+<text x="20.701" y="8.509" size="1.016" layer="25" font="vector">PRW_1</text>
+<text x="20.701" y="5.842" size="1.016" layer="25" font="vector">GND_1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
