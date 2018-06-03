@@ -22,9 +22,11 @@ For example when Battery (VCC) volts are around 13V, which implies charging, hav
 ## Design
  
 0. Uses a [Moteino](https://lowpowerlab.com/guide/moteino/)
-1. The JST is for a Lipo battery
+1. The JST is to connect the VCC (Ie battery power) and Thermostat connection
 2. Their is a 1.8M/3.3M VCC voltage divider to monitor the LIPO, with a 0.1uF capacitor - see [Jeelabs post here](https://jeelabs.org/2013/05/16/measuring-the-battery-without-draining-it/)
 3. A 27M/3.3M voltage divider to measure 30+VCC on an ADC pin
 4. Two (One for the fridge the other for ambient temp)[DS18B20 Waterproof Digital Probe Temperature Sensor with Silicone Cable (higher temp) Thermometer](https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xvermont+l+tent.TRS0&_nkw=DS18B20+Waterproof+Digital+Probe+Temperature+Sensor+Silicone+Cable+Thermometer&_sacat=0)
 5. An efficient 7-36V to 3.3V regulator : [Murata OKI-78SR-5/1.5-W36-C](https://power.murata.com/data/power/oki-78sr.pdf)
 6. Three Status LEDS; Power, Boost mode, Economy mode
+7. Six pin header for the two DS18 temp sensors to be connected too
+8. CPC17076 Power relay to control the compressor (ie make the connection as the thermostat does)
