@@ -6385,6 +6385,11 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <wire x1="104.14" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 <label x="104.14" y="48.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
+<label x="180.34" y="147.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D5_DS2_PWR" class="0">
 <segment>
@@ -6473,11 +6478,6 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
 <label x="180.34" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
-<label x="180.34" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -162,9 +162,10 @@ smartFridgeController</text>
 <text x="20.701" y="8.509" size="0.762" layer="25" font="vector">PRW_1</text>
 <text x="20.701" y="5.842" size="0.762" layer="25" font="vector">GND_1</text>
 <text x="3.175" y="11.938" size="0.762" layer="25" font="vector">+VE</text>
-<text x="0.762" y="4.064" size="0.762" layer="25" font="vector">+VCC</text>
-<text x="5.969" y="3.937" size="0.762" layer="25" font="vector">+3.3V</text>
-<text x="3.429" y="3.937" size="0.762" layer="25" font="vector">+GND</text>
+<text x="1.397" y="3.937" size="0.762" layer="25" font="vector">VCC</text>
+<text x="6.223" y="3.937" size="0.762" layer="25" font="vector">+3.3V</text>
+<text x="3.937" y="3.937" size="0.762" layer="25" font="vector">GND</text>
+<text x="14.605" y="20.955" size="0.762" layer="25" font="vector">C1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -798,7 +799,7 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1U" x="15.24" y="17.78" smashed="yes" rot="R90">
+<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1U" x="15.24" y="17.78" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CAP-08370" x="-11.43" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="3.3M" x="15.24" y="8.89" smashed="yes" rot="R270">
@@ -861,7 +862,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="43.815" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="C2" pad="2"/>
+<contactref element="C1" pad="2"/>
 <contactref element="R5" pad="P$1"/>
 <contactref element="JST" pad="3"/>
 <contactref element="OKI-78SR-5/1.5-W36-C" pad="3"/>
@@ -1105,7 +1106,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="A7_VCC_VD">
 <contactref element="U$1" pad="A7_ONLY"/>
-<contactref element="C2" pad="1"/>
+<contactref element="C1" pad="1"/>
 <contactref element="R5" pad="P$2"/>
 <contactref element="R6" pad="1"/>
 <wire x1="19.05" y1="22.352" x2="19.05" y2="22.86" width="0.254" layer="16"/>
