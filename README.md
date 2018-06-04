@@ -29,4 +29,4 @@ For example when Battery (VCC) volts are around 13V, which implies charging, hav
 5. An efficient 7-36V to 3.3V regulator : [Murata OKI-78SR-5/1.5-W36-C](https://power.murata.com/data/power/oki-78sr.pdf)
 6. Three Status LEDS; Power, Boost mode, Economy mode
 7. Six pin header for the two DS18 temp sensors to be connected too
-8. [IXYS CPC 17076](http://www.ixysic.com/home/pdfs.nsf/www/CPC1706.pdf/$file/CPC1706.pdf) Power relay to control the compressor (ie make the connection as the thermostat does)
+8. [IXYS CPC 1706](http://www.ixysic.com/home/pdfs.nsf/www/CPC1706.pdf/$file/CPC1706.pdf) Power relay to control the compressor (ie make the connection as the thermostat does)
