@@ -6177,8 +6177,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </library>
 </libraries>
 <attributes>
-<attribute name="CNAME" value="MoteinoMega ABoatMon GPS Shield"/>
-<attribute name="CREVISION" value="2.99"/>
+<attribute name="CNAME" value="Smat Fridge Controller"/>
+<attribute name="CREVISION" value="0.2"/>
 <attribute name="DESIGNER" value="greg.cope@gmail.com"/>
 </attributes>
 <variantdefs>
@@ -6201,7 +6201,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <part name="U$1" library="Moteino" deviceset="MOTEINO" device="R6"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="OKI-78SR-5/1.5-W36-C" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="Regulator"/>
-<part name="CPC1706" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="S*02S02" device="" package3d_urn="urn:adsk.eagle:package:24541/1" technology="1"/>
+<part name="IXYS_CPC_1706" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="S*02S02" device="" package3d_urn="urn:adsk.eagle:package:24541/1" technology="1"/>
 <part name="18B20" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH"/>
 <part name="DZ1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LZR183" device="" package3d_urn="urn:adsk.eagle:package:15788/1"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-1%" value="1K"/>
@@ -6225,7 +6225,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <instance part="U$1" gate="G$1" x="81.28" y="58.42"/>
 <instance part="SUPPLY3" gate="GND" x="124.46" y="73.66"/>
 <instance part="OKI-78SR-5/1.5-W36-C" gate="J$1" x="238.76" y="55.88" rot="R180"/>
-<instance part="CPC1706" gate="G$1" x="48.26" y="147.32"/>
+<instance part="IXYS_CPC_1706" gate="G$1" x="48.26" y="147.32" smashed="yes">
+<attribute name="NAME" x="40.64" y="153.67" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="18B20" gate="G$1" x="106.68" y="144.78"/>
 <instance part="DZ1" gate="-1" x="228.6" y="121.92" rot="R90"/>
 <instance part="DZ1" gate="-2" x="228.6" y="134.62" rot="R90"/>
@@ -6263,11 +6265,6 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="104.14" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="A"/>
-<wire x1="38.1" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
-<label x="20.32" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="18B20" gate="G$1" pin="4"/>
 <wire x1="111.76" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <label x="111.76" y="147.32" size="1.778" layer="95"/>
@@ -6291,6 +6288,11 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <pinref part="DZ1" gate="-3" pin="C"/>
 <wire x1="233.68" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IXYS_CPC_1706" gate="G$1" pin="K"/>
+<wire x1="38.1" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
+<label x="20.32" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="1">
@@ -6326,7 +6328,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="144.78" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="DS1"/>
+<pinref part="IXYS_CPC_1706" gate="G$1" pin="DS1"/>
 <wire x1="58.42" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
 <label x="60.96" y="149.86" size="1.778" layer="95"/>
 </segment>
@@ -6338,7 +6340,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="144.78" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="DS2"/>
+<pinref part="IXYS_CPC_1706" gate="G$1" pin="DS2"/>
 <wire x1="58.42" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91"/>
 <label x="60.96" y="144.78" size="1.778" layer="95"/>
 </segment>
@@ -6451,9 +6453,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="104.14" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="K"/>
-<wire x1="38.1" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
-<label x="20.32" y="144.78" size="1.778" layer="95"/>
+<pinref part="IXYS_CPC_1706" gate="G$1" pin="A"/>
+<wire x1="38.1" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
+<label x="20.32" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D16_LED_YELLOW_PIN" class="0">

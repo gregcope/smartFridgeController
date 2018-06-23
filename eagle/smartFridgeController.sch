@@ -6116,7 +6116,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <part name="R6" library="adafruit" deviceset="R-US_" device="0309/12" value="27M"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="OKI-78SR-5/1.5-W36-C" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="Regulator"/>
-<part name="18B20" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH"/>
+<part name="18B20" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH" value="JST"/>
 <part name="DZ1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LZR183" device="" package3d_urn="urn:adsk.eagle:package:15788/1"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-1%" value="1K"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-1%" value="1K5"/>
@@ -6138,7 +6138,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <instance part="R5" gate="G$1" x="170.18" y="50.8" rot="R90"/>
 <instance part="JST" gate="G$1" x="139.7" y="43.18"/>
 <instance part="R6" gate="G$1" x="170.18" y="63.5" rot="R90"/>
-<instance part="SUPPLY3" gate="GND" x="124.46" y="73.66"/>
+<instance part="SUPPLY3" gate="GND" x="93.98" y="96.52"/>
 <instance part="OKI-78SR-5/1.5-W36-C" gate="J$1" x="238.76" y="55.88" rot="R180"/>
 <instance part="18B20" gate="G$1" x="106.68" y="144.78"/>
 <instance part="DZ1" gate="-1" x="228.6" y="121.92" rot="R90"/>
@@ -6150,7 +6150,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <instance part="SUPPLY1" gate="GND" x="241.3" y="121.92" rot="R90"/>
 <instance part="SUPPLY2" gate="GND" x="241.3" y="134.62" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="241.3" y="147.32" rot="R90"/>
-<instance part="U$2" gate="G$1" x="81.28" y="58.42"/>
+<instance part="U$2" gate="G$1" x="50.8" y="81.28"/>
 <instance part="IXYS_CPC_1706Y" gate="G$1" x="48.26" y="147.32" smashed="yes">
 <attribute name="NAME" x="40.64" y="153.67" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -6177,9 +6177,10 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <wire x1="231.14" y1="53.34" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
-<label x="104.14" y="76.2" size="1.778" layer="95"/>
+<wire x1="93.98" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+<label x="73.66" y="99.06" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="GND1"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="18B20" gate="G$1" pin="4"/>
@@ -6214,8 +6215,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="VIN" class="1">
 <segment>
-<wire x1="104.14" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<label x="104.14" y="73.66" size="1.778" layer="95"/>
+<wire x1="73.66" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<label x="73.66" y="96.52" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
@@ -6264,8 +6265,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D7_DS1_PWR" class="0">
 <segment>
-<wire x1="66.04" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
-<label x="48.26" y="60.96" size="1.778" layer="95"/>
+<wire x1="35.56" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
+<label x="17.78" y="83.82" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="D7"/>
 </segment>
 <segment>
@@ -6276,8 +6277,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D6_DS1_DATA" class="0">
 <segment>
-<wire x1="66.04" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
-<label x="48.26" y="63.5" size="1.778" layer="95"/>
+<wire x1="35.56" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="17.78" y="86.36" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="D6"/>
 </segment>
 <segment>
@@ -6288,8 +6289,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D4_DS2_DATA" class="0">
 <segment>
-<wire x1="66.04" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-<label x="48.26" y="68.58" size="1.778" layer="95"/>
+<wire x1="35.56" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
+<label x="17.78" y="91.44" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="D4"/>
 </segment>
 <segment>
@@ -6300,8 +6301,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D15_LED_RED_PIN" class="0">
 <segment>
-<wire x1="104.14" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
-<label x="104.14" y="48.26" size="1.778" layer="95"/>
+<wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<label x="73.66" y="71.12" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="A1"/>
 </segment>
 <segment>
@@ -6312,8 +6313,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D5_DS2_PWR" class="0">
 <segment>
-<wire x1="66.04" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-<label x="48.26" y="66.04" size="1.778" layer="95"/>
+<wire x1="35.56" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="17.78" y="88.9" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="D5"/>
 </segment>
 <segment>
@@ -6345,8 +6346,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="A7_VCC_VD" class="0">
 <segment>
-<wire x1="104.14" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
-<label x="104.14" y="63.5" size="1.778" layer="95"/>
+<wire x1="73.66" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+<label x="73.66" y="86.36" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="A7_ONLY"/>
 </segment>
 <segment>
@@ -6365,8 +6366,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D14_RELAY_PIN" class="0">
 <segment>
-<wire x1="104.14" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
-<label x="104.14" y="45.72" size="1.778" layer="95"/>
+<wire x1="73.66" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<label x="73.66" y="68.58" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="A0"/>
 </segment>
 <segment>
@@ -6377,8 +6378,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D16_LED_YELLOW_PIN" class="0">
 <segment>
-<wire x1="104.14" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="104.14" y="50.8" size="1.778" layer="95"/>
+<wire x1="73.66" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<label x="73.66" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 </segment>
 <segment>
@@ -6389,8 +6390,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </net>
 <net name="D17_LED_GREEN_PIN" class="0">
 <segment>
-<wire x1="104.14" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
-<label x="104.14" y="53.34" size="1.778" layer="95"/>
+<wire x1="73.66" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<label x="73.66" y="76.2" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="A3"/>
 </segment>
 <segment>
@@ -6403,10 +6404,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </sheet>
 </sheets>
 <errors>
-<approved hash="111,1,104.14,76.2,GND,,,,,"/>
-<approved hash="111,1,124.46,76.2,GND,,,,,"/>
 <approved hash="113,1,141.563,45.7877,JST,,,,,"/>
-<approved hash="113,1,146.643,134.688,18B20,,,,,"/>
 </errors>
 </schematic>
 </drawing>
