@@ -6177,8 +6177,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </library>
 </libraries>
 <attributes>
-<attribute name="CNAME" value="MoteinoMega ABoatMon GPS Shield"/>
-<attribute name="CREVISION" value="2.99"/>
+<attribute name="CNAME" value="Smat Fridge Controller"/>
+<attribute name="CREVISION" value="0.2"/>
 <attribute name="DESIGNER" value="greg.cope@gmail.com"/>
 </attributes>
 <variantdefs>
@@ -6263,11 +6263,6 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="104.14" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="A"/>
-<wire x1="38.1" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
-<label x="20.32" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="18B20" gate="G$1" pin="4"/>
 <wire x1="111.76" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <label x="111.76" y="147.32" size="1.778" layer="95"/>
@@ -6291,6 +6286,11 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <pinref part="DZ1" gate="-3" pin="C"/>
 <wire x1="233.68" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CPC1706" gate="G$1" pin="K"/>
+<wire x1="38.1" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
+<label x="20.32" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="1">
@@ -6451,9 +6451,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <label x="104.14" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPC1706" gate="G$1" pin="K"/>
-<wire x1="38.1" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
-<label x="20.32" y="144.78" size="1.778" layer="95"/>
+<pinref part="CPC1706" gate="G$1" pin="A"/>
+<wire x1="38.1" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
+<label x="20.32" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D16_LED_YELLOW_PIN" class="0">

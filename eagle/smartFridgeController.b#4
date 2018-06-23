@@ -150,7 +150,7 @@
 <wire x1="43.485" y1="25.39" x2="0" y2="25.39" width="0" layer="20"/>
 <wire x1="0" y1="25.39" x2="0" y2="0" width="0" layer="20"/>
 <text x="42.672" y="1.524" size="0.6096" layer="25" font="vector" rot="R90">gregcope@gmail.com
-v0.1
+v0.2
 smartFridgeController</text>
 <text x="3.556" y="17.78" size="0.762" layer="25" font="vector">VCC</text>
 <text x="3.556" y="15.875" size="0.762" layer="25" font="vector">GND</text>
@@ -866,7 +866,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R5" pad="P$1"/>
 <contactref element="JST" pad="3"/>
 <contactref element="OKI-78SR-5/1.5-W36-C" pad="3"/>
-<contactref element="CPC1706" pad="3"/>
 <contactref element="18B20" pad="4"/>
 <contactref element="18B20" pad="1"/>
 <contactref element="DZ1" pad="K1"/>
@@ -890,6 +889,16 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="43.18" y="24.765"/>
 <vertex x="43.18" y="0"/>
 </polygon>
+<contactref element="CPC1706" pad="4"/>
+<wire x1="19.05" y1="13.97" x2="29.21" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="12.7" x2="19.05" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="19.177" x2="19.05" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="6.35" x2="15.24" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="16.24" x2="15.24" y2="19.177" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="6.35" x2="7.62" y2="16.24" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="7.62" x2="29.21" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="5.08" x2="38.1" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="2.54" x2="38.1" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN" class="1">
 <contactref element="U$1" pad="VIN"/>
@@ -1145,8 +1154,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="D14_RELAY_PIN">
 <contactref element="U$1" pad="A0"/>
-<contactref element="CPC1706" pad="4"/>
-<wire x1="27.94" y1="20.32" x2="29.21" y2="20.32" width="0.254" layer="1"/>
 <wire x1="27.559" y1="20.701" x2="27.94" y2="20.32" width="0.254" layer="1"/>
 <wire x1="27.432" y1="20.701" x2="27.559" y2="20.701" width="0.254" layer="1"/>
 <wire x1="27.305" y1="20.574" x2="27.432" y2="20.701" width="0.254" layer="1"/>
@@ -1171,6 +1178,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.667" y1="20.828" x2="12.192" y2="20.828" width="0.254" layer="1"/>
 <wire x1="1.27" y1="22.225" x2="2.667" y2="20.828" width="0.254" layer="1"/>
 <wire x1="1.27" y1="22.86" x2="1.27" y2="22.225" width="0.254" layer="1"/>
+<contactref element="CPC1706" pad="3"/>
+<wire x1="27.94" y1="20.32" x2="29.21" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D16_LED_YELLOW_PIN">
 <contactref element="U$1" pad="A2"/>
