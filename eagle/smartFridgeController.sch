@@ -6340,16 +6340,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="111.76" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D15_LED_RED_PIN" class="0">
-<segment>
-<wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<label x="73.66" y="71.12" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="A1"/>
-</segment>
+<net name="D14_LED_RED_PIN" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
 <label x="160.02" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="A0"/>
+<wire x1="73.66" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<label x="73.66" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5_DS2_PWR" class="0">
@@ -6384,28 +6384,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="200.66" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D14_RELAY_PIN" class="0">
-<segment>
-<wire x1="73.66" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
-<label x="73.66" y="68.58" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="A0"/>
-</segment>
+<net name="D17_RELAY_PIN" class="0">
 <segment>
 <wire x1="38.1" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 <label x="20.32" y="149.86" size="1.778" layer="95"/>
 <pinref part="IXYS_CPC_1706Y" gate="G$1" pin="A"/>
 </segment>
-</net>
-<net name="D17_LED_GREEN_PIN" class="0">
 <segment>
+<pinref part="U$2" gate="G$1" pin="A3"/>
 <wire x1="73.66" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 <label x="73.66" y="76.2" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="A3"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="160.02" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6438,9 +6426,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="160.02" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="U$2" gate="G$1" pin="A2"/>
 <wire x1="73.66" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 <label x="73.66" y="73.66" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="A2"/>
+</segment>
+</net>
+<net name="D15_LED_GREEN_PIN" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="160.02" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="A1"/>
+<wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<label x="73.66" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
