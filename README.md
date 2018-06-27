@@ -11,7 +11,7 @@ For example when Battery (VCC) volts are around 13V, which implies charging, hav
 * There is a connetion to the thermostat pins, that allows it to override the normal thermostat
 * If it fails the normal thermostat works as is
 * The normal theromostat should be set to the "economy" temp setting
-* LEDs show the mode its in (Boost or economy)
+* LEDs show the mode its in (Boost or economy, or error)
 
 # Eagle Files
 
@@ -28,6 +28,6 @@ For example when Battery (VCC) volts are around 13V, which implies charging, hav
 4. Two (One for the fridge the other for ambient temp)[DS18B20 Waterproof Digital Probe Temperature Sensor with Silicone Cable (higher temp) Thermometer](https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.Xvermont+l+tent.TRS0&_nkw=DS18B20+Waterproof+Digital+Probe+Temperature+Sensor+Silicone+Cable+Thermometer&_sacat=0)
 5. An efficient 7-36V to 3.3V regulator : [Murata OKI-78SR-5/1.5-W36-C](https://power.murata.com/data/power/oki-78sr.pdf)
 6. [RGB LED](https://www.proto-pic.co.uk/content/datasheets/5mm_RGB_led_common_anodeDatasheet.pdf)
-6. Three Status LEDS; Power, Boost mode, Economy mode
+6. Three Status LEDS; Normal modes - Boost (blue), Economy (green) and error (red)
 7. Six pin header for the two DS18 temp sensors to be connected too
 8. [IXYS CPC 1706](http://www.ixysic.com/home/pdfs.nsf/www/CPC1706.pdf/$file/CPC1706.pdf) Power relay to control the compressor (ie make the connection as the thermostat does)
