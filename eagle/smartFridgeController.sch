@@ -6170,7 +6170,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1U"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-1%" value="3.3M"/>
-<part name="JST" library="SparkFun-Connectors" deviceset="CONN_04" device="JST-PTH"/>
+<part name="JST" library="SparkFun-Connectors" deviceset="CONN_04" device="JST-PTH" value="18B20"/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="0309/12" value="27M"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="OKI-78SR-5/1.5-W36-C" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="Regulator"/>
@@ -6181,7 +6181,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="U$2" library="Moteino" deviceset="MOTEINO_SIMPLE" device=""/>
 <part name="IXYS_CPC_1706Y" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="AQZ10*D" device="" package3d_urn="urn:adsk.eagle:package:24370/1" technology="2"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-RGB-CA" device="CLEAR" value="CLEAR"/>
+<part name="STATUS_LED" library="SparkFun-LED" deviceset="LED-RGB-CA" device="CLEAR" value="CLEAR"/>
 </parts>
 <sheets>
 <sheet>
@@ -6205,7 +6205,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="IXYS_CPC_1706Y" gate="G$1" x="48.26" y="147.32" smashed="yes">
 <attribute name="NAME" x="40.64" y="153.67" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="D1" gate="G$1" x="215.9" y="134.62"/>
+<instance part="STATUS_LED" gate="G$1" x="215.9" y="134.62"/>
 </instances>
 <busses>
 </busses>
@@ -6245,13 +6245,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="111.76" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="134.62" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <wire x1="38.1" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91"/>
 <label x="20.32" y="144.78" size="1.778" layer="95"/>
 <pinref part="IXYS_CPC_1706Y" gate="G$1" pin="K"/>
+</segment>
+<segment>
+<pinref part="STATUS_LED" gate="G$1" pin="A"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<wire x1="228.6" y1="134.62" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
+<label x="228.6" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="1">
@@ -6399,7 +6401,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="RED"/>
+<pinref part="STATUS_LED" gate="G$1" pin="RED"/>
 <wire x1="198.12" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="147.32" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 </segment>
@@ -6407,14 +6409,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="BLU"/>
+<pinref part="STATUS_LED" gate="G$1" pin="BLU"/>
 <wire x1="198.12" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="GRN"/>
+<pinref part="STATUS_LED" gate="G$1" pin="GRN"/>
 <wire x1="198.12" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="121.92" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 </segment>
@@ -6446,9 +6448,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,141.563,45.7877,JST,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
