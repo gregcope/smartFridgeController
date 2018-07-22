@@ -6192,7 +6192,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY7" gate="GND" x="177.8" y="43.18"/>
 <instance part="C1" gate="G$1" x="190.5" y="50.8"/>
 <instance part="R5" gate="G$1" x="170.18" y="50.8" rot="R90"/>
-<instance part="JST" gate="G$1" x="139.7" y="43.18"/>
+<instance part="JST" gate="G$1" x="66.04" y="22.86"/>
 <instance part="R6" gate="G$1" x="170.18" y="63.5" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="93.98" y="96.52"/>
 <instance part="OKI-78SR-5/1.5-W36-C" gate="J$1" x="238.76" y="55.88" rot="R180"/>
@@ -6213,20 +6213,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="GND" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="45.72" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="45.72" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="45.72" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
-<label x="149.86" y="45.72" size="1.778" layer="95"/>
+<label x="71.12" y="27.94" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<junction x="170.18" y="45.72"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <junction x="177.8" y="45.72"/>
 <wire x1="190.5" y1="45.72" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
 <junction x="190.5" y="45.72"/>
-<pinref part="JST" gate="G$1" pin="3"/>
 <pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="3"/>
 <wire x1="231.14" y1="53.34" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
+<junction x="170.18" y="45.72"/>
+<label x="154.94" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
@@ -6270,23 +6270,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC" class="1">
 <segment>
-<wire x1="144.78" y1="68.58" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
-<label x="144.78" y="55.88" size="1.778" layer="95" rot="R90"/>
-<pinref part="JST" gate="G$1" pin="4"/>
-<wire x1="144.78" y1="68.58" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<junction x="170.18" y="68.58"/>
 <wire x1="223.52" y1="68.58" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="1"/>
 <wire x1="223.52" y1="58.42" x2="231.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<junction x="170.18" y="68.58"/>
+<label x="154.94" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JST" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
+<label x="71.12" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+VE" class="1">
 <segment>
 <pinref part="JST" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<label x="144.78" y="40.64" size="1.778" layer="95"/>
+<wire x1="71.12" y1="20.32" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<label x="71.12" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
@@ -6297,8 +6300,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="-VE" class="1">
 <segment>
 <pinref part="JST" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
-<label x="144.78" y="43.18" size="1.778" layer="95"/>
+<wire x1="71.12" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
+<label x="71.12" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91"/>
@@ -6443,6 +6446,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$2" gate="G$1" pin="A1"/>
 <wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <label x="73.66" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JST" gate="G$1" pin="4"/>
+<wire x1="71.12" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
