@@ -6152,7 +6152,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Smat Fridge Controller"/>
-<attribute name="CREVISION" value="0.3"/>
+<attribute name="CREVISION" value="0.4"/>
 <attribute name="DESIGNER" value="greg.cope@gmail.com"/>
 </attributes>
 <variantdefs>
