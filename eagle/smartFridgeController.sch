@@ -6220,13 +6220,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <junction x="177.8" y="45.72"/>
-<wire x1="190.5" y1="45.72" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="45.72" x2="223.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="45.72" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 <junction x="190.5" y="45.72"/>
-<pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="3"/>
-<wire x1="231.14" y1="53.34" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
-<junction x="170.18" y="45.72"/>
-<label x="154.94" y="45.72" size="1.778" layer="95"/>
+<pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="2"/>
+<wire x1="223.52" y1="55.88" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
+<label x="226.06" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
@@ -6263,9 +6262,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="2"/>
-<wire x1="231.14" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
-<label x="223.52" y="55.88" size="1.778" layer="95"/>
+<pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="3"/>
+<wire x1="231.14" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
+<label x="226.06" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -6275,9 +6274,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="223.52" y1="68.58" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="OKI-78SR-5/1.5-W36-C" gate="J$1" pin="1"/>
 <wire x1="223.52" y1="58.42" x2="231.14" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
-<junction x="170.18" y="68.58"/>
-<label x="154.94" y="68.58" size="1.778" layer="95"/>
+<label x="226.06" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JST" gate="G$1" pin="3"/>
